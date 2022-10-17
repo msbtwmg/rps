@@ -7,6 +7,7 @@ function getComputerChoice() {
     return options[random];
 }
 
+
 function playRound(playerSelection, computerSelection) {
 
     if (playerSelection == "Rock") {
@@ -46,10 +47,12 @@ function playRound(playerSelection, computerSelection) {
 }
 
 function game() {
-    for (let i = 0; i < 5; ++i) {
-        playRound(playerSelection, computerSelection);
+    for (let i = 0; i < 5; i++) {
+        
         computerSelection = getComputerChoice();
-        // playerSelection NEU DEFINIEREN;
+        playerSelection = prompt("Rock, Paper or Scissors?");
+
+        playRound(playerSelection, computerSelection);
 
         console.log("PC: " + computerSelection);
         console.log("P: " + playerSelection);
@@ -67,7 +70,4 @@ function game() {
         alert("It's a draw! No one wins!");
     }
 }
-
-let playerSelection = "Paper";
-let computerSelection = getComputerChoice();
 console.log(game());
