@@ -21,7 +21,6 @@ playerSelection = playerSelection.toLowerCase();
             return "You Lose! Paper beats Rock!";
         }
    }
-
     if (playerSelection == "paper") {
         if (computerSelection == "Scissors") {
             ++computerWin;
@@ -70,4 +69,5 @@ function game() {
         alert("It's a draw! No one wins!");
     }
 }
+
 console.log(game());
