@@ -1,6 +1,11 @@
+
 const options = ["Rock", "Paper", "Scissors"];
 let playerWin = 0;
 let computerWin = 0;
+const rockBtn = document.querySelector('#rockBtn');
+const paperBtn = document.querySelector('#paperBtn');
+const scissorsBtn = document.querySelector('#scissorsBtn');
+
 
 function getComputerChoice() {
     const random = Math.floor(Math.random() * options.length);
@@ -46,7 +51,7 @@ playerSelection = playerSelection.toLowerCase();
 }
 
 function game() {
-    for (let i = 0; i < 5; i++) {
+   /* for (let i = 0; i < 5; i++) {
         
         computerSelection = getComputerChoice();
         playerSelection = prompt("Rock, Paper or Scissors?");
@@ -56,7 +61,7 @@ function game() {
         console.log("PC: " + computerSelection);
         console.log("P: " + playerSelection);
 
-    }
+    }*/
     console.log("Punkte Pc: " + computerWin);
     console.log("Punkte Player: " + playerWin);
 
@@ -70,4 +75,10 @@ function game() {
     }
 }
 
-console.log(game());
+if (rockBtn != null){
+    rockBtn.addEventListener('click', () => {
+       const playerSelection = "rock";
+       console.log(alert(playerSelection));
+    });
+}
+
