@@ -1,0 +1,16 @@
+.container {
+    text-align: center;
+
+}
+
+button  {
+    flex-wrap: wrap;
+    font-size: 40px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color: pink;
+    color: azure;
+    border: none;
+    border-radius: 12px;
+    
+
+}
